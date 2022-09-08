@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: linear-gradient(direction, color-stop1, color-stop2); */
+            height: 100vh;
+        }
+        .clr{
+            color: rgb(243, 224, 224);
+            font-family: Calibri;
+            font-style: italic;
+        }
+        .css-selector {
+    background: linear-gradient(270deg, #3f897f, #d90fee);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+    </style>
+</head>
+<body class="css-selector">
+    <h2 class="clr"><i>Current Time is:</i></h2>
+    <h2 class="clr" id="digiclock()"></h2>
+    <script src="clock.js"></script>
+</body>
+</html>
